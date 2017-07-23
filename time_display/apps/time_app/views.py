@@ -14,8 +14,3 @@ def index(request):
 		'time': time
 	}
 	return render(request, 'time_app/index.html', context)
-
-
-def show_time():
-	now = datetime.datetime.now()
-	print now.strftime('%b %d %Y')
